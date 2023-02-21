@@ -38,18 +38,30 @@
             font-size: 22px;
             font-weight: 700;
             cursor: pointer;
+            @include md {
+                font-size: 34px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
         .header-right {
             display: flex;
             align-items: center;
             gap: 20px;
+            @include md {
+                gap:25px;
+            }
             svg {
                 font-size: 20px;
                 cursor: pointer;
+                @include md {
+                    font-size: 24px;
+                }
             }
             .cart-icon {
                 position: relative;
-                span {
+                span  {
                     min-width: 20px;
                     text-align: center;
                     background-color: #8e2ce2;
@@ -65,4 +77,19 @@
             }
         }
     }
+    &.sticky-header {
+        position: sticky;
+        transform: translateY(-80px);
+        top: 0;
+        animation: stickyHeader 0.3s ease forwards;
+    }
+}
+
+@keyframes stickyHeader {
+    0% {    transform: translateY(-80px);
+
+       }
+    100% { transform: translateY(0);
+        }
+
 }
