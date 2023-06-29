@@ -9,6 +9,7 @@ const Category = () => {
       <div className="categories">
         <div className="category">
           <img src={cat1} alt="" />
+          <h1>Hello</h1>
         </div>
         <div className="category">
           <img src={cat2} alt="" />
