@@ -10,6 +10,7 @@ const Category = () => {
         <div className="category">
           <img src={cat1} alt="" />
           <h1>Helloo</h1>
+          <h1>Hy</h1>
         </div>
         <div className="category">
           <img src={cat2} alt="" />
